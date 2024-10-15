@@ -20,8 +20,9 @@ body{
         grid-template-columns: 15vw auto;
         gap: 0px;
         .sidebar{
-
+            
             &__button{
+                text-decoration: none;
                 display: flex;
                 flex-direction: row ;
                 align-items: center;

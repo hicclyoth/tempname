@@ -1,61 +1,272 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
-*{
-    font-family: Lexend !important;
-    color: white !important;
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-body{
-    background-color: #121417;
-    
-    nav{
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: Lexend !important;
+  color: white !important;
+}
+
+body {
+  background-color: #121417;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 0 3vh 0;
+    border-bottom: 1px solid rgb(77, 77, 77);
+  }
+
+  .parent {
+    display: flex;
+    padding: 20px 24px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+    align-self: stretch;
+
+    .sidebar {
+      display: flex;
+      width: 320px;
+      height: 1225px;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .sidebar_nav_container {
         display: flex;
+        min-height: 500px;
+        padding: 16px 16px 108px 16px;
+        flex-direction: column;
         align-items: center;
+        align-self: stretch;
+
+        .sidebar_nav_buttons {
+          display: flex;
+          width: 288px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+
+          a {
+            align-self: stretch;
+            color: #FFF;
+            font-feature-settings: 'dlig' on;
+            font-family: Lexend;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 21px;
+          }
+
+          img {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+
+    .sidebar__button {
+      display: flex;
+      padding: 8px 12px;
+      align-items: center;
+      gap: 12px;
+      align-self: stretch;
+      text-decoration: none;
+      
+      &:hover {
+        border-radius: 12px;
+        background: #293038;
+      }
+    }
+
+    .main {
+      display: flex;
+      height: 1255px;
+      max-width: 960px;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1 0 0;
+
+      .welcome {
+        display: flex;
+        padding: 16px;
         justify-content: space-between;
-        padding: 3vh 0 3vh 0;
-        border-bottom: 1px solid rgb(77, 77, 77);
-    }
-    .parent{
-        display: grid;
-        grid-template-columns: 15vw auto;
-        gap: 0px;
-        .sidebar{
-            
-            &__button{
-                text-decoration: none;
-                display: flex;
-                flex-direction: row ;
-                align-items: center;
-            }
+        align-items: flex-start;
+        align-content: flex-start;
+        row-gap: 12px;
+        align-self: stretch;
+        flex-wrap: wrap;
+
+        img {
+          vertical-align: middle;
+          margin-top: 1px; 
+          position: relative;
+          top: 1px; 
         }
-        .main{
-            padding: 5vh 0 0 4vw;
-            h1{
-                font-weight: 700;
-                font-size: 2.1rem;
-           }
-            .reminder{
-                display: flex;
-                flex-direction: row;
-                margin: 6vh 4vw 0 0;
-                padding: 3vh 1.5vw;
-                border: 1px solid rgba(255, 255, 255, 0.212);
-                border-radius: 12px;
-                max-width: 70vw;
-                h2{
-                    font-weight: 700;
-                    font-size: 1rem;
-                }
-                button{
-                    background-color: #2194F2;
-                    border-color: #2194F2;
-                    border-radius: 20px;
-                    border-style: solid;
-                    box-shadow: none;
-                    white-space: nowrap;
-                    padding: 1.25vh 0.75vw;
-                }
-            }
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 2.1rem;
+      }
+
+      .reminder_container {
+        display: flex;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+      }
+
+      .reminder {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 0 0;
+        align-self: stretch;
+        border-radius: 12px;
+        border: 1px solid #3B4A54;
+        background: #121417;
+
+        .reminder-text {
+          align-self: stretch;
+          color: #FFF;
+          font-feature-settings: 'dlig' on;
+          font-family: Lexend;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 20px;
         }
+
+        .reminder-button {
+          display: flex;
+          height: 32px;
+          min-width: 84px;
+          max-width: 480px;
+          padding: 0px 16px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 12px;
+
+          button {
+            background-color: #2194F2;
+            border-color: #2194F2;
+            border-radius: 20px;
+            border-style: solid;
+            box-shadow: none;
+            white-space: nowrap;
+            padding: 1.25vh 0.75vw;
+          }
+        }
+      }
+
+      .lessons_container {
+        display: flex;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;
+      }
+
+      .lessons_grid {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        flex: 1 0 0;
+        align-self: stretch;
+
+        .lesson_item {
+          display: flex;
+          width: 166px;
+          padding-bottom: 12px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+          align-self: stretch;
+
+          img {
+            height: 166px;
+            align-self: stretch;
+            border-radius: 12px;
+            background: url("../images/lessons/image-test.png") lightgray 50% / cover no-repeat;
+          }
+
+          .lesson_description {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+
+            h1 {
+              align-self: stretch;
+              color: #FFF;
+              font-feature-settings: 'dlig' on;
+              font-family: Lexend;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 24px;
+            }
+
+            p {
+              align-self: stretch;
+              color: #9CABBA !important;
+              font-feature-settings: 'dlig' on;
+              font-family: Lexend;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 21px;
+            }
+          }
+        }
+      }
     }
+  }
 }

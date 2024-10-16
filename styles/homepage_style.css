@@ -7,7 +7,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-} /* HTML5 display-role reset for older browsers */
+}
+
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -43,9 +45,9 @@ body {
   background-color: #121417;
   min-height: 800px;
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
 }
 body nav {
   display: flex;
@@ -63,7 +65,6 @@ body .parent {
   flex: 1 0 0;
   align-self: stretch;
 }
-
 body .parent .sidebar {
   display: flex;
   width: 320px;
@@ -71,7 +72,6 @@ body .parent .sidebar {
   flex-direction: column;
   align-items: flex-start;
 }
-
 body .parent .sidebar .sidebar_nav_container {
   display: flex;
   min-height: 500px;
@@ -80,7 +80,6 @@ body .parent .sidebar .sidebar_nav_container {
   align-items: center;
   align-self: stretch;
 }
-
 body .parent .sidebar .sidebar_nav_container .sidebar_nav_buttons {
   display: flex;
   width: 288px;
@@ -88,7 +87,20 @@ body .parent .sidebar .sidebar_nav_container .sidebar_nav_buttons {
   align-items: flex-start;
   gap: 16px;
 }
-
+body .parent .sidebar .sidebar_nav_container .sidebar_nav_buttons a {
+  align-self: stretch;
+  color: #FFF;
+  font-feature-settings: "dlig" on;
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+}
+body .parent .sidebar .sidebar_nav_container .sidebar_nav_buttons img {
+  width: 24px;
+  height: 24px;
+}
 body .parent .sidebar__button {
   display: flex;
   padding: 8px 12px;
@@ -96,77 +108,46 @@ body .parent .sidebar__button {
   gap: 12px;
   align-self: stretch;
   text-decoration: none;
-  
 }
-
 body .parent .sidebar__button:hover {
   border-radius: 12px;
   background: #293038;
 }
-
-
-body .parent .sidebar .sidebar_nav_container .sidebar_nav_buttons a {
-  align-self: stretch;
-  color: #FFF;
-  font-feature-settings: 'dlig' on;
-  font-family: Lexend;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 21px; /* 150% */
-}
-
-body .parent .sidebar .sidebar_nav_container .sidebar_nav_buttons img {
-  width: 24px;
-height: 24px;
-}
-
-
-
-
-
-
-
 body .parent .main {
   display: flex;
-height: 1255px;
-max-width: 960px;
-flex-direction: column;
-align-items: flex-start;
-flex: 1 0 0;
+  height: 1255px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
 }
-
 body .parent .main .welcome {
   display: flex;
-padding: 16px;
-justify-content: space-between;
-align-items: flex-start;
-align-content: flex-start;
-row-gap: 12px;
-align-self: stretch;
-flex-wrap: wrap;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  row-gap: 12px;
+  align-self: stretch;
+  flex-wrap: wrap;
 }
-
 body .parent .main .welcome img {
-
   vertical-align: middle;
-  margin-top: 1px; 
+  margin-top: 1px;
   position: relative;
-  top: 1px; 
+  top: 1px;
 }
 body .parent .main h1 {
   font-weight: 700;
   font-size: 2.1rem;
-  
 }
 body .parent .main .reminder_container {
-display: flex;
-padding: 16px;
-flex-direction: column;
-align-items: flex-start;
-align-self: stretch;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
 }
-
 body .parent .main .reminder {
   display: flex;
   padding: 20px;
@@ -174,21 +155,19 @@ body .parent .main .reminder {
   align-items: center;
   flex: 1 0 0;
   align-self: stretch;
-
   border-radius: 12px;
-border: 1px solid #3B4A54;
-background: #121417;
+  border: 1px solid #3B4A54;
+  background: #121417;
 }
-
 body .parent .main .reminder .reminder-text {
   align-self: stretch;
   color: #FFF;
-  font-feature-settings: 'dlig' on;
+  font-feature-settings: "dlig" on;
   font-family: Lexend;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px; /* 125% */
+  line-height: 20px;
 }
 body .parent .main .reminder .reminder-button {
   display: flex;
@@ -209,7 +188,6 @@ body .parent .main .reminder .reminder-button button {
   white-space: nowrap;
   padding: 1.25vh 0.75vw;
 }
-
 body .parent .main .lessons_container {
   display: flex;
   padding: 16px;
@@ -218,15 +196,13 @@ body .parent .main .lessons_container {
   gap: 12px;
   align-self: stretch;
 }
-
 body .parent .main .lessons_grid {
   display: flex;
-  animation: flex-start;
+  align-items: flex-start;
   gap: 12px;
   flex: 1 0 0;
   align-self: stretch;
 }
-
 body .parent .main .lessons_grid .lesson_item {
   display: flex;
   width: 166px;
@@ -236,44 +212,35 @@ body .parent .main .lessons_grid .lesson_item {
   gap: 12px;
   align-self: stretch;
 }
-
 body .parent .main .lessons_grid .lesson_item img {
   height: 166px;
   align-self: stretch;
   border-radius: 12px;
-  background: url("../images/lessons/image-test.png") lightgray 50% / cover no-repeat;
+  background: url("../images/lessons/image-test.png") lightgray 50%/cover no-repeat;
 }
-
 body .parent .main .lessons_grid .lesson_item .lesson_description {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
 }
-
 body .parent .main .lessons_grid .lesson_item .lesson_description h1 {
   align-self: stretch;
   color: #FFF;
-  font-feature-settings: 'dlig' on;
+  font-feature-settings: "dlig" on;
   font-family: Lexend;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
-
-body .parent .main .lessons_grid .lesson_item .lesson_description p{
+body .parent .main .lessons_grid .lesson_item .lesson_description p {
   align-self: stretch;
   color: #9CABBA !important;
-  font-feature-settings: 'dlig' on;
+  font-feature-settings: "dlig" on;
   font-family: Lexend;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21px; /* 150% */
-}
-
-
-
-/*# sourceMappingURL=style.css.map */
-
+  line-height: 21px;
+}/*# sourceMappingURL=homepage_style.css.map */

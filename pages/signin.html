@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/default.css">
+    <link rel="stylesheet" href="/styles/signin_style.css">
 </head>
 <body>
     <nav>
@@ -14,10 +15,24 @@
         </div>
         <div class="nav__buttons">
             <a href="/pages/curriculum.html" class="nav__buttons nav__buttons-curriculum">Curriculum</a>
-            <a href="/pages/signin.html" class="nav__buttons nav__buttons-signin">Sign In</a>
-            <a href="/pages/signup.html" class="nav__buttons nav__buttons-signup">Get Started</a>
+            <a href="/pages/signin.html" class="nav__buttons nav__buttons-signin active-page">Sign In</a>
+            <a href="/pages/signup.html" class="nav__buttons nav__buttons-signup">Sign Up</a>
         </div>
     </nav>
 
+    <div class="loginForm">
+        <h1>Login</h1>
+        <form action="">
+            <div class="loginForm-username">
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+            </div>
+            <div class="loginForm-password">
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
 </body>
 </html>

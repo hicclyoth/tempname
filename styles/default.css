@@ -38,6 +38,7 @@ table {
   font-family: Lexend !important;
   color: white !important;
   text-decoration: none;
+  box-shadow: none;
 }
 
 @keyframes fadeIn {
@@ -48,6 +49,17 @@ table {
     opacity: 1;
   }
 }
+.active-page {
+  background-color: #3a3a3a !important;
+  border-color: #3a3a3a !important;
+  font-weight: 400 !important;
+  border-radius: 10px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  white-space: nowrap !important;
+  padding: 1.25vh 0.75vw !important;
+}
+
 body {
   background-color: #121417;
 }
@@ -74,13 +86,9 @@ body nav .nav__logo img {
 body nav .nav__buttons {
   text-decoration: none;
   font-weight: 500;
-  margin: 0 0 0 2vw;
+  margin: 0 2vw 0 2vw;
+  transition: color 0.3s ease;
 }
-body nav .nav__buttons-signup {
-  background-color: #2194F2;
-  border: 1px solid #2194F2;
-  padding: 1.5vh;
-  margin-right: 1vw;
-  font-weight: 700;
-  border-radius: 13px;
+body nav .nav__buttons:hover {
+  color: #7e7e7e !important;
 }/*# sourceMappingURL=default.css.map */

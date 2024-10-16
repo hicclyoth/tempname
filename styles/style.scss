@@ -14,6 +14,19 @@
 body {
     background-color: #121417;
     
+    .nav__buttons{
+        &-signup{
+            background-color: #2194F2;
+            border: 1px solid #2194F2;
+            padding: 1.5vh;
+            margin-right: 1vw;
+            font-weight: 700;
+            border-radius: 13px;
+            &:hover{
+                color: rgb(235, 235, 235) !important;
+            }
+        }
+    }
 
     .hero{
         opacity: 0;

@@ -126,9 +126,14 @@ height: 24px;
 
 
 
-body .parent .sidebar
+
 body .parent .main {
-  padding: 5vh 0 0 4vw;
+  display: flex;
+height: 1255px;
+max-width: 960px;
+flex-direction: column;
+align-items: flex-start;
+flex: 1 0 0;
 }
 
 body .parent .main .welcome {
@@ -153,8 +158,6 @@ body .parent .main h1 {
   font-weight: 700;
   font-size: 2.1rem;
   
-
-  
 }
 body .parent .main .reminder_container {
 display: flex;
@@ -176,9 +179,6 @@ body .parent .main .reminder {
 border: 1px solid #3B4A54;
 background: #121417;
 }
-
-
-
 
 body .parent .main .reminder .reminder-text {
   align-self: stretch;
@@ -208,4 +208,71 @@ body .parent .main .reminder .reminder-button button {
   box-shadow: none;
   white-space: nowrap;
   padding: 1.25vh 0.75vw;
-}/*# sourceMappingURL=style.css.map */
+}
+
+body .parent .main .lessons_container {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+body .parent .main .lessons_grid {
+  display: flex;
+  animation: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+body .parent .main .lessons_grid .lesson_item {
+  display: flex;
+  width: 166px;
+  padding-bottom: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+body .parent .main .lessons_grid .lesson_item img {
+  height: 166px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: url("../images/lessons/image-test.png") lightgray 50% / cover no-repeat;
+}
+
+body .parent .main .lessons_grid .lesson_item .lesson_description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+body .parent .main .lessons_grid .lesson_item .lesson_description h1 {
+  align-self: stretch;
+  color: #FFF;
+  font-feature-settings: 'dlig' on;
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+body .parent .main .lessons_grid .lesson_item .lesson_description p{
+  align-self: stretch;
+  color: #9CABBA !important;
+  font-feature-settings: 'dlig' on;
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

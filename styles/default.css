@@ -37,55 +37,50 @@ table {
 * {
   font-family: Lexend !important;
   color: white !important;
+  text-decoration: none;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   background-color: #121417;
 }
 body nav {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 3vh 0 3vh 0;
-  border-bottom: 1px solid rgb(77, 77, 77);
-}
-body .parent {
-  display: grid;
-  grid-template-columns: 15vw auto;
-  gap: 0px;
-}
-body .parent .sidebar__button {
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
   align-items: center;
+  padding: 1vw 0 1vw 2.5vw;
+  position: sticky;
+  top: 0;
+  background-color: #121417;
+  z-index: 1;
 }
-body .parent .main {
-  padding: 5vh 0 0 4vw;
-}
-body .parent .main h1 {
-  font-weight: 700;
-  font-size: 2.1rem;
-}
-body .parent .main .reminder {
+body nav .nav__logo {
+  font-weight: 800;
   display: flex;
-  flex-direction: row;
-  margin: 6vh 4vw 0 0;
-  padding: 3vh 1.5vw;
-  border: 1px solid rgba(255, 255, 255, 0.212);
-  border-radius: 12px;
-  max-width: 70vw;
+  align-items: center;
+  font-size: large;
 }
-body .parent .main .reminder h2 {
-  font-weight: 700;
-  font-size: 1rem;
+body nav .nav__logo img {
+  height: 100%;
 }
-body .parent .main .reminder button {
+body nav .nav__buttons {
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 0 0 2vw;
+}
+body nav .nav__buttons-signup {
   background-color: #2194F2;
-  border-color: #2194F2;
-  border-radius: 20px;
-  border-style: solid;
-  box-shadow: none;
-  white-space: nowrap;
-  padding: 1.25vh 0.75vw;
-}/*# sourceMappingURL=style.css.map */
+  border: 1px solid #2194F2;
+  padding: 1.5vh;
+  margin-right: 1vw;
+  font-weight: 700;
+  border-radius: 13px;
+}/*# sourceMappingURL=default.css.map */

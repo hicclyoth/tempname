@@ -3,56 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>TempName</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/default.css">
 </head>
 <body>
-    
-    <div class="parent">
-        <div class="sidebar">
-            <a class="sidebar__button sidebar__button-home" href="#">
-                <img src="images/home-icon.svg" alt="">
-                <h1>Home</h1>
-            </a>
-            <a class="sidebar__button sidebar__button-learn" href="#">
-                <img src="images/learn-icon.svg" alt="">
-                <h1>Learn</h1>
-            </a>
-            <a class="sidebar__button sidebar__button-projects" href="#">
-                <img src="images/projects-icon.svg" alt="">
-                <h1>Projects</h1>
-            </a>
-            <a class="sidebar__button sidebar__button-forum" href="#">
-                <img src="images/forum-icon.svg" alt="">
-                <h1>Forum</h1>
-            </a>
-            <a class="sidebar__button sidebar__button-playground" href="#">
-                <img src="images/playground-icon.svg" alt="">
-                <h1>Playground</h1>
-            </a>
-            <a class="sidebar__button sidebar__button-docs" href="#">
-                <img src="images/docs-icon.svg" alt="">
-                <h1>Docs</h1>
-            </a>
-            <a class="sidebar__button sidebar__button-help" href="#">
-                <img src="images/help-icon.svg" alt="">
-                <h1>Help</h1>
-            </a>
+    <nav>
+        <div class="nav__logo">
+            <img src="/images/csharp-logoo.svg" alt="">
+            <h1>Academy</h1>
         </div>
-        <div class="main">
-            <h1>Welcome to C# Academy</h1>
-            <div class="reminder">
-                <div class="reminder-text">
-                    <h2>Get started with C# programming. Choose from our 
-                        guided learning paths, practice coding exercises, and join the community to learn from others.
-                    </h2>
-                </div>
-                <div class="reminder-button">
-                    <button>Start Learning</button>
-                </div>
+        <div class="nav__buttons">
+            <a href="/pages/curriculum.html" class="nav__buttons nav__buttons-curriculum">Curriculum</a>
+            <a href="/pages/signin.html" class="nav__buttons nav__buttons-signin">Sign In</a>
+            <a href="/pages/signup.html" class="nav__buttons nav__buttons-signup">Get Started</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero__img">
+            <img src="/images/homepage-hero.png" alt="">
+        </div>
+        <div class="hero__coa">
+            <div class="hero__coa-text">
+                <h1>Learn C# and .NET</h1>
+                <p>Build your first app in 3 weeks only!! No experience required.</p>
+            </div>
+            <div class="hero__coa-action">
+                <a href="/pages/signup.html" class="hero__coa-action-signup">Get Started</a>
             </div>
         </div>
+        
     </div>
-   
+    <div class="info">
+        <div class="info__text">
+            <h1>Why C# Academy?</h1>
+            <p>Our mission is to help you learn C# and .NET, so that you can build 
+                your first app in only 3 weeks! <br>
+                Whether you're new to programming or if you're just here to add more skills, well then we've got you covered!
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <h1>Ready to start?</h1>
+        <a href="/pages/signup.html" class="footer-signup">Sign Up Now!</a>
+        <div class="footnotes">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="/pages/about.html"><li>About</li></a>
+                <a href="/pages/contact.html"><li>Contact Us</li></a>
+                <a href="pages/info.html"><li>Info</li></a>
+            </ul>
+            <ul>
+                <a href="pages/extrainfo.html"><li>Extra Info</li></a>
+                <a href="pages/members.html"><li>Members</li></a>
+            </ul>
+        </div>
+        
+        <div class="socials">
+            <a href="https://facebook.com"><img src="/images/facebook-icon.svg" alt=""> </a>
+            <a href="https://instagram.com"><img src="/images/ig-icon.svg" alt=""> </a>
+            <a href="https://tiktok.com"><img src="/images/tiktok-icon.svg" alt=""> </a>
+            <a href="https://x.com"><img src="/images/twitter-icon.svg" alt=""> </a>
+
+        </div>
+
+        <p>Copyright ©2024 C# Academy®. All rights reserved.</p>
+
+    </footer>
 </body>
 </html>

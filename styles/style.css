@@ -123,7 +123,7 @@ body .key-benefits {
   display: flex;
   justify-content: space-between;
   padding: 15vh 0 10vh;
-  margin: 3vh;
+  margin: 1vh;
   border-radius: 10px;
 }
 
@@ -131,6 +131,16 @@ body .key-benefits .benefit {
   flex: 1;
   margin: 0 15px;
   text-align: center;
+}
+
+body .key-benefits .benefit svg {
+  
+  width: 25vh;
+  height: 25vh;
+}
+
+body .key-benefits .benefit svg {
+  fill: white;
 }
 
 body .key-benefits h2 {
@@ -154,7 +164,6 @@ body footer {
   flex-direction: column;
 }
 body footer h1 {
-  margin-bottom: 3vh;
   font-weight: 700;
   font-size: 2rem;
 }

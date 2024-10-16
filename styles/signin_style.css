@@ -6,7 +6,7 @@ body .loginForm {
   align-items: center;
   background-color: #171c20;
   margin: 7vh 34vw 0;
-  padding: 3vw 10vw 5vw 10vw;
+  padding: 3vw 9vw 5vw 9vw;
   border-radius: 15px;
 }
 body .loginForm h1 {
@@ -51,4 +51,12 @@ body .loginForm button:hover {
   cursor: pointer;
   background-color: #489bdf;
   color: rgb(214, 214, 214) !important;
+}
+body .loginForm #message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  color: #489bdf !important;
+  width: 100%;
 }/*# sourceMappingURL=signin_style.css.map */

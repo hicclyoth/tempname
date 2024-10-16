@@ -1,0 +1,54 @@
+body .loginForm {
+  display: flex;
+  flex-direction: column;
+  margin: 5vh 0 0 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #171c20;
+  margin: 7vh 34vw 0;
+  padding: 3vw 10vw 5vw 10vw;
+  border-radius: 15px;
+}
+body .loginForm h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+body .loginForm-username {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+body .loginForm-password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+body .loginForm input {
+  margin: 2vh 0 2vh 0;
+  min-width: 25vw;
+  min-height: 3.5vw;
+  border-radius: 10px;
+  background-color: #29323a;
+  border: 1px solid #171c20;
+  font-size: 1rem;
+  padding-left: 15px;
+}
+body .loginForm form {
+  display: flex;
+  flex-direction: column;
+}
+body .loginForm button {
+  font-size: 1rem;
+  padding: 0.75vw 0 0.75vw 0;
+  background-color: #2194F2;
+  border-color: #171c20;
+  border-radius: 15px;
+  box-shadow: none;
+  border-style: solid;
+  transition: background-color 0.3s ease;
+}
+body .loginForm button:hover {
+  cursor: pointer;
+  background-color: #489bdf;
+  color: rgb(214, 214, 214) !important;
+}/*# sourceMappingURL=signin_style.css.map */

@@ -41,6 +41,11 @@ table {
 
 body {
   background-color: #121417;
+  min-height: 800px;
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
 }
 body nav {
   display: flex;
@@ -50,37 +55,152 @@ body nav {
   border-bottom: 1px solid rgb(77, 77, 77);
 }
 body .parent {
-  display: grid;
-  grid-template-columns: 15vw auto;
-  gap: 0px;
-}
-body .parent .sidebar__button {
-  text-decoration: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  padding: 20px 24px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+  align-self: stretch;
 }
+
+body .parent .sidebar {
+  display: flex;
+  width: 320px;
+  height: 1225px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+body .parent .sidebar .sidebar_nav_container {
+  display: flex;
+  min-height: 500px;
+  padding: 16px 16px 108px 16px;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+}
+
+body .parent .sidebar .sidebar_nav_container .sidebar_nav_buttons {
+  display: flex;
+  width: 288px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+body .parent .sidebar__button {
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  text-decoration: none;
+  
+}
+
+body .parent .sidebar__button:hover {
+  border-radius: 12px;
+  background: #293038;
+}
+
+
+body .parent .sidebar .sidebar_nav_container .sidebar_nav_buttons a {
+  align-self: stretch;
+  color: #FFF;
+  font-feature-settings: 'dlig' on;
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px; /* 150% */
+}
+
+body .parent .sidebar .sidebar_nav_container .sidebar_nav_buttons img {
+  width: 24px;
+height: 24px;
+}
+
+
+
+
+
+
+body .parent .sidebar
 body .parent .main {
   padding: 5vh 0 0 4vw;
+}
+
+body .parent .main .welcome {
+  display: flex;
+padding: 16px;
+justify-content: space-between;
+align-items: flex-start;
+align-content: flex-start;
+row-gap: 12px;
+align-self: stretch;
+flex-wrap: wrap;
+}
+
+body .parent .main .welcome img {
+
+  vertical-align: middle;
+  margin-top: 1px; 
+  position: relative;
+  top: 1px; 
 }
 body .parent .main h1 {
   font-weight: 700;
   font-size: 2.1rem;
+  
+
+  
 }
+body .parent .main .reminder_container {
+display: flex;
+padding: 16px;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+}
+
 body .parent .main .reminder {
   display: flex;
-  flex-direction: row;
-  margin: 6vh 4vw 0 0;
-  padding: 3vh 1.5vw;
-  border: 1px solid rgba(255, 255, 255, 0.212);
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+
   border-radius: 12px;
-  max-width: 70vw;
+border: 1px solid #3B4A54;
+background: #121417;
 }
-body .parent .main .reminder h2 {
+
+
+
+
+body .parent .main .reminder .reminder-text {
+  align-self: stretch;
+  color: #FFF;
+  font-feature-settings: 'dlig' on;
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 700;
-  font-size: 1rem;
+  line-height: 20px; /* 125% */
 }
-body .parent .main .reminder button {
+body .parent .main .reminder .reminder-button {
+  display: flex;
+  height: 32px;
+  min-width: 84px;
+  max-width: 480px;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+body .parent .main .reminder .reminder-button button {
   background-color: #2194F2;
   border-color: #2194F2;
   border-radius: 20px;

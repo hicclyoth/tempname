@@ -230,6 +230,12 @@ body {
           gap: 12px;
           align-self: stretch;
 
+          &:hover {
+            cursor: pointer;
+            border-radius: 12px;
+            background-color: #293038;
+          }
+
           img {
             height: 166px;
             align-self: stretch;

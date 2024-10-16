@@ -89,6 +89,7 @@ body .hero__coa-text h1 {
   font-size: 4rem;
 }
 body .hero__coa-text p {
+  line-height: 5em;
   font-weight: 300;
   font-size: 1.1rem;
 }
@@ -108,16 +109,64 @@ body .hero__coa-action-signup {
 body .info {
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
-  margin: 10vh 10vw 0;
+  margin: 20vh 10vw 0;
 }
 body .info__text h1 {
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 3vh;
+  text-align: center;
+}
+
+body .info__text h1 img {
+  vertical-align: middle;
+  margin-top: 1px; 
+  position: relative;
+  top: 1px; 
 }
 body .info__text p {
+  font-size: 1.2rem;
+  text-align: center;
   line-height: 1.5;
 }
+
+body .key-benefits {
+  display: flex;
+  justify-content: space-between;
+  padding: 15vh 0 10vh;
+  margin: 1vh;
+  border-radius: 10px;
+}
+
+body .key-benefits .benefit {
+  flex: 1;
+  margin: 0 15px;
+  text-align: center;
+}
+
+body .key-benefits .benefit svg {
+  
+  width: 25vh;
+  height: 25vh;
+}
+
+body .key-benefits .benefit svg {
+  fill: white;
+}
+
+body .key-benefits h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+body .key-benefits p {
+  line-height: 1.5;
+  font-size: 16px;
+  color: #555;
+}
+
+
 body footer {
   margin: 10vh 10vw 0;
   display: flex;
@@ -126,7 +175,6 @@ body footer {
   flex-direction: column;
 }
 body footer h1 {
-  margin-bottom: 3vh;
   font-weight: 700;
   font-size: 2rem;
 }

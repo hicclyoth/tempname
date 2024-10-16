@@ -29,3 +29,24 @@ async function handleSignIn(event) {
         document.getElementById('message').innerText = 'An error occurred. Please try again.';
     }
 }
+
+async function checkDashboard() {
+    const token = localStorage.getItem('token');
+
+    const response = await fetch('https://tempname-backend.onrender.com/api/dashboard', {
+        method: 'GET',
+        headers: {
+            'Authorization': `Bearer ${token}` 
+        }
+    });
+
+    if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+        window.location.replace('dashboard.html')
+    } 
+    
+}
+
+
+checkDashboard();

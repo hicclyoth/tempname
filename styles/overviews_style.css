@@ -42,4 +42,16 @@ body .main__lessons .main__lesson .main__lessons-img img {
 }
 body .main__lessons .main__lesson:hover {
   background-color: #292e35;
+}
+body .main .finish-button {
+  margin-top: 10vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+body .main .finish-button a {
+  transition: background-color 0.3s ease;
+}
+body .main .finish-button a:hover {
+  background-color: #1c6bac !important;
 }/*# sourceMappingURL=overviews_style.css.map */

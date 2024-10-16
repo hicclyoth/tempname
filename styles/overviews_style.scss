@@ -47,5 +47,17 @@ body{
                 }
             }
         }
+        .finish-button{
+            margin-top: 10vh;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            a{
+                transition: background-color 0.3s ease;
+            }
+            a:hover{
+                background-color: #1c6bac !important;
+            }
+        }
     }
 }

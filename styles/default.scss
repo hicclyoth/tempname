@@ -12,6 +12,18 @@
     to {opacity: 1;}
 }
 
+@keyframes delayedFadeIn {
+    0%{
+      opacity: 0;
+    }
+    70%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
 .active-page{
     background-color: #3a3a3a !important;
     border-color: #3a3a3a !important;

@@ -1,0 +1,97 @@
+body{
+display: flex;
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+    .nav__logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2vh;
+        h1{
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__buttons{
+        width: 20vw;
+        overflow-y: auto;
+        position: fixed;
+        padding: 5vh 0 0 2vw;
+
+        .sidebar__button{
+            margin-bottom: 2vh;
+        }    
+    }
+
+   
+        a {
+          align-self: stretch;
+          color: #FFF;
+          font-feature-settings: 'dlig' on;
+          font-family: Lexend;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 21px;
+        }
+      }
+    }
+  
+
+  .sidebar__button {
+    display: flex;
+    padding: 8px 12px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    text-decoration: none;
+    
+    &:hover {
+      border-radius: 12px;
+      background: #293038;
+    }
+  }
+
+  .main{
+    opacity: 0;
+    padding-left: 20vw;
+    margin: 5vh 2vw 0 5vw;
+    &__title{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    &__description{
+        font-size: 1rem;
+        font-weight: 300;
+        color: rgb(187, 187, 187) !important;
+        margin: 2vh 0;
+    }
+    &__subsection{
+        font-size: 1.5rem;
+        font-weight: 600;
+        &-introduction{
+            margin: 7vh 0 4vh;
+            
+        }
+    }
+    p{
+        line-height: 5vh;
+        margin-right: 10vw;
+        font-weight: 300;
+    }
+    &__next{
+        display: flex;
+        justify-content: right;
+        margin: 2vh 10vw 0 0;
+        a{
+            padding: 2vh 2vw!important;
+            animation: delayedFadeIn 10s ease forwards !important;
+        }
+    }
+
+    animation: fadeIn 2s ease forwards;
+  }

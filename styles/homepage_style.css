@@ -212,6 +212,11 @@ body .parent .main .lessons_grid .lesson_item {
   gap: 12px;
   align-self: stretch;
 }
+body .parent .main .lessons_grid .lesson_item:hover {
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #293038;
+}
 body .parent .main .lessons_grid .lesson_item img {
   height: 166px;
   align-self: stretch;

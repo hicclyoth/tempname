@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/styles/default.css">
     <link rel="stylesheet" href="/styles/register_style.css">
+    <script src="/scripts/register.js" defer></script>
 </head>
 <body>
     <nav>
@@ -22,7 +23,7 @@
 
     <div class="registerForm">
         <h1>Register</h1>
-        <form action="">
+        <form id="signup-form" onsubmit="handleSignIn(event)">
             <div class="registerForm-username">
             <label for="username">Username</label>
             <input type="text" id="username" minlength="4" maxlength="16" placeholder="Enter your Username" required>
@@ -33,6 +34,8 @@
             </div>
             <button type="submit">Sign Up</button>
         </form>
+    <div id="message"></div>
+
     </div>
 </body>
 </html>

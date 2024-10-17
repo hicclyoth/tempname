@@ -73,6 +73,9 @@ body .sidebar a {
 .main__subsection-introduction {
   margin: 7vh 0 4vh;
 }
+.main__subsection__parag {
+  margin-top: 3vh;
+}
 .main p {
   line-height: 5vh;
   margin-right: 10vw;

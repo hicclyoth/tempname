@@ -15,10 +15,13 @@
         ]
       },
       {
-        "title": "Variables and Data Types",
+        "title": "Working with var, Constants, and Operators in C#",
         "parts": [
           "lesson2.html",
-          "lesson2(2).html"
+          "lesson2(2).html",
+          "lesson2(3).html",
+          "lesson2(4).html",
+          "lesson2(5).html"
         ]
       },
       {

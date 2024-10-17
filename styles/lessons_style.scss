@@ -102,6 +102,8 @@ body {
         margin-top: 3vh;
       }
     }
+
+    
   
     p {
       line-height: 5vh;
@@ -139,5 +141,26 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+  }
+  
+  .operator-list {
+    padding-left: 30px;
+  }
+
+  .operator-list-item {
+    font-weight: bold;
+    line-height: 50px;
+
+  }
+
+  .operator-list-item-description {
+    font-weight: normal;
+    display: inline;
+    color: white !important
+  }
+
+  .operator-sublist {
+    padding-left: 20px;
+    margin-top: 5px;
   }
   

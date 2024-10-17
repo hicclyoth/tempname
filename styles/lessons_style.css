@@ -121,4 +121,24 @@ body .sidebar__subbutton:hover {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+}
+
+.operator-list {
+  padding-left: 30px;
+}
+
+.operator-list-item {
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.operator-list-item-description {
+  font-weight: normal;
+  display: inline;
+  color: white !important;
+}
+
+.operator-sublist {
+  padding-left: 20px;
+  margin-top: 5px;
 }/*# sourceMappingURL=lessons_style.css.map */

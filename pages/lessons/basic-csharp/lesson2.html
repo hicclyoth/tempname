@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/default.css">
+    <link rel="stylesheet" href="/styles/lessons_style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar__buttons">
+            <a href="index.html" class="nav__logo">
+                <img src="/images/csharp-logoo.svg" alt="">
+                <h1>Academy</h1>
+            </a>
+        <!--dynamic sidebar script will automatically fill this according to the 'course-structure.json'-->
+    </div>
+
+    <div class="main">
+        <h1 class="main__title">Lesson 2: Working with var, Constants, and Operators in C#</h1>
+        <h2 class="main__description">C# is a modern, object-oriented language for diverse application development, especially on .NET.</h2>
+        
+
+        <h3 class="main__subsection main__subsection-introduction">The var Keyword in C#</h3>
+        <p>
+            The var keyword in C# is a convenient feature that allows the compiler to automatically determine the type of a variable based on the value assigned to it. This results in what are known as implicitly-typed variables.
+
+            
+        </p>
+        <br> <br>
+        <h3 class="main__subsection">Automatic Type Inference</h3>
+        <br>
+        <p> When you declare a variable using var, you do not need to explicitly specify its data type. The compiler infers the type from the assigned value.
+        </p>
+        <br>
+        <h3 class="main__subsection">Example:</h3>
+        <br> <br>
+        <img src="../../../images/auto_type_inference.png" style="min-width: 818px; max-height: 88px;">
+        <br> <br><br>
+        <h3 class="main__subsection">Initialization Requirement</h3>
+        <br>
+        <p> Implicitly-typed variables must be initialized at the time of declaration. Failing to do so will result in a compilation error.
+
+        </p>
+        <br>
+        <h3 class="main__subsection">Example:</h3>
+        <br> <br>
+        <img src="../../../images/initialization_required.png" style="max-width: 818px; max-height: 88px;">
+        
+
+        
+        <div class="main__next">
+            <!-- leave empty for the script-->
+        </div>
+        
+    </div>
+
+    <script src="/scripts/dynamic-sidebar.js"></script>
+    <script>fetchCourses("basic-csharp")</script>
+</body>
+</html>

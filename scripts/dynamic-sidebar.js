@@ -86,7 +86,7 @@ function generateNavigation(courseStructure) {
 }
 
 // Fetch the course structure and initialize
-fetch('course-structure.json')
+fetch('/scripts/course-structure.json')
     .then(response => response.json())
     .then(courseStructure => {
         generateSidebar(courseStructure);

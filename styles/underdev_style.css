@@ -1,0 +1,10 @@
+body .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30vh;
+}
+body .main h1 {
+  font-weight: 700;
+  font-size: 5rem;
+}/*# sourceMappingURL=underdev_style.css.map */

@@ -36,6 +36,20 @@ body .sidebar a {
   font-weight: 500;
   line-height: 21px;
 }
+body .sidebar__submenu {
+  padding-left: 20px;
+}
+body .sidebar__subbutton {
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #333;
+}
+body .sidebar__subbutton:hover {
+  border-radius: 12px;
+  background: #293038;
+}
 
 .sidebar__button {
   display: flex;
@@ -88,5 +102,23 @@ body .sidebar a {
 }
 .main__next a {
   padding: 2vh 2vw !important;
-  animation: delayedFadeIn 10s ease forwards !important;
+  animation: delayedFadeIn 3s ease forwards !important;
+}
+
+.active-lesson {
+  font-weight: bold;
+}
+
+.main__next {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.anchor-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }/*# sourceMappingURL=lessons_style.css.map */

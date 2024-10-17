@@ -41,6 +41,10 @@ table {
   box-shadow: none;
 }
 
+span {
+  color: rgb(0, 255, 0) !important;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

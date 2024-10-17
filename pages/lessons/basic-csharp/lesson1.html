@@ -14,53 +14,34 @@
                 <img src="/images/csharp-logoo.svg" alt="">
                 <h1>Academy</h1>
             </a>
-            <!-- Using active-page class for highlighting buttons of active pages -->
-            <a class="sidebar__button  active-page" href="#">
-                <h1>Lesson 1</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 2</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 3</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 4</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 5</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 6</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 7</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 8</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 9</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 10</h1>
-            </a>
-
-        </div>
-        
+        <!--dynamic sidebar script will automatically fill this according to the 'course-structure.json'-->
     </div>
 
     <div class="main">
-        <h1 class="main__title">Lesson 1: Overview of C# and Configuring the Environment</h1>
-        <h2 class="main__description">Introduction to C# and its development tools, including Visual Studio and .NET.</h2>
+        <h1 class="main__title">Lesson 1: Introduction to C#</h1>
+        <h2 class="main__description">C# is a modern, object-oriented language for diverse application development, especially on .NET.</h2>
+        
 
         <h3 class="main__subsection main__subsection-introduction">Introduction</h3>
-        <p>C# is a modern object-oriented programming language created by Microsoft. It runs on the .NET framework and is used to develop various applications such as games, web apps, and desktop apps. C# is strongly typed, which means each variable must have a defined type. It supports object-oriented programming (OOP) and can be used across platforms with .NET Core and .NET 5+. A common use case for C# is game development with Unity. Development tools for C# include Visual Studio (VS), a complete integrated development environment (IDE) for coding, debugging, and testing, and Visual Studio Code (VS Code), a lightweight editor that supports C# plugins. To compile and run C# programs, you’ll need the .NET SDK. </p>
+        <p>
+            C# is an elegant object-oriented programming language that allows developers to create a wide variety of secure and robust applications running on the .NET Framework. This framework consists of two main components: the Common Language Runtime (CLR), which manages code execution and provides core services like memory management, and the Class Library, a collection of classes and interfaces for common programming tasks.
+            
+        </p>
+        <br> <br>
+        <h3 class="main__subsection">Variables and Data Types</h3>
+        <br>
+        <p>The language supports the use of variables to store data dynamically, requiring declaration with a specific name and data type. C# includes built-in data types such as int, float, char, bool, and string. It also facilitates user interaction through methods for printing text to the console and obtaining user input. Additionally, comments can be added for clarity, and constants can be declared for values that remain unchanged throughout the program.
+        </p>
+        
+
         
         <div class="main__next">
-            <a href="lesson1(2).html" class="anchor-button">Next</a>
+            <!-- leave empty for the script-->
         </div>
         
     </div>
+
+    <script src="/scripts/dynamic-sidebar.js"></script>
+    <script>fetchCourses("basic-csharp")</script>
 </body>
 </html>

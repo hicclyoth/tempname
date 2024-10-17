@@ -14,53 +14,42 @@
                 <img src="/images/csharp-logoo.svg" alt="">
                 <h1>Academy</h1>
             </a>
-            <!-- Using active-page class for highlighting buttons of active pages -->
-            <a class="sidebar__button  active-page" href="#">
-                <h1>Lesson 1</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 2</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 3</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 4</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 5</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 6</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 7</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 8</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 9</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 10</h1>
-            </a>
-
-        </div>
-        
+        <!--dynamic sidebar script will automatically fill this according to the 'course-structure.json'-->
     </div>
 
     <div class="main">
-        <h1 class="main__title">Lesson 1: Overview of C# and Configuring the Environment Part 4</h1>
-        <h2 class="main__description">Introduction to C# and its development tools, including Visual Studio and .NET.</h2>
+        <h1 class="main__title">Lesson 1: Introduction to C#</h1>
+        <h2 class="main__description">C# is a modern, object-oriented language for diverse application development, especially on .NET.</h2>
+        
 
-        <h3 class="main__subsection main__subsection-introduction">Conclusion</h3>
-        <p>C# is a powerful, modern programming language created by Microsoft, designed for building a wide variety of applications across different platforms. It integrates well within the .NET framework and is commonly used for web, desktop, and game development, among other areas. Setting up your development environment with tools like Visual Studio or Visual Studio Code, alongside the .NET SDK, gives you a robust foundation for writing, debugging, and running C# programs. With this knowledge, you are now prepared to explore C#’s syntax, features, and various use cases, creating everything from simple console applications to more complex projects.</p>
+        <h3 class="main__subsection main__subsection-introduction">Data Conversion</h3>
+        <p>User input, initially captured as a string, can be converted into other data types using the <span>Convert.ToXXX </span>methods, where <span>XXX</span> represents the desired data type.
+        </p>
+        <br> 
+        <h3 class="main__subsection"><span>Convert.ToDouble()</span>: Converts input into a double.:</h3>
+        <br>
+        <img src="/images/screenshot_lesson1_beginner_4.png" alt="">
+        <br> <br>
+        <h3 class="main__subsection"><span>Convert.ToBoolean()</span>: Converts input into a boolean value.
+        </h3>
+        <br>
+        <img src="/images/screenshot_lesson1_beginner_5.png" alt="">
+        <br>
+        <p><span>Convert.ToInt16(), Convert.ToInt32(), Convert.ToInt64()</span>: These methods convert input into integer values based on specified bit sizes (16-bit, 32-bit, and 64-bit, respectively).
+        </p>
+        <br>
+        <h3 class="main__subsection">Example:</h3>
+        <br>
+        <img src="/images/screenshot_lesson1_beginner_3.png" alt="">
+
         
         <div class="main__next">
-            <a href="lesson2.html" class="anchor-button">Finish Lesson</a>
+            <!-- leave empty for the script-->
         </div>
         
     </div>
+
+    <script src="/scripts/dynamic-sidebar.js"></script>
+    <script>fetchCourses("basic-csharp")</script>
 </body>
 </html>

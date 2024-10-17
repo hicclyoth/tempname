@@ -1,12 +1,12 @@
 // Function to generate sidebar content
-function generateSidebar(courseStructure) {
+function generateSidebar(courseStructure,courseName) {
     const sidebar = document.querySelector('.sidebar__buttons');
     const logoLink = sidebar.querySelector('.nav__logo');
-    
+    const course = getCourse(courseStructure,courseName)
+    console.log(course)
     sidebar.innerHTML = '';
     sidebar.appendChild(logoLink);
-
-    courseStructure.lessons.forEach((lesson, index) => {
+    course.lessons.forEach((lesson, index) => {
         const lessonButton = document.createElement('div');
         lessonButton.className = 'sidebar__lesson';
 
@@ -54,15 +54,17 @@ function generateSidebar(courseStructure) {
 }
 
 // Function to generate navigation buttons
-function generateNavigation(courseStructure) {
+function generateNavigation(courseStructure,courseName) {
     const currentPath = window.location.pathname;
     const navContainer = document.querySelector('.main__next');
+    const course = getCourse(courseStructure,courseName)
+    console.log(course)
     if (!navContainer) return;
 
     let allPages = [];
 
     // Flatten lesson structure
-    courseStructure.lessons.forEach(lesson => {
+    course.lessons.forEach(lesson => {
         allPages = allPages.concat(lesson.parts);
     });
 
@@ -85,11 +87,20 @@ function generateNavigation(courseStructure) {
     }
 }
 
+// Find specific course
+    //Added getCourse to find the course name in json file
+function getCourse(courseStructure, courseName) {
+    return courseStructure.courses.find(course => course.name === courseName);
+}
+
 // Fetch the course structure and initialize
-fetch('course-structure.json')
+    //Added courseName parameter to find courseName
+function fetchCourses(courseName){
+    fetch('/scripts/course-structure.json')
     .then(response => response.json())
     .then(courseStructure => {
-        generateSidebar(courseStructure);
-        generateNavigation(courseStructure);
+        generateSidebar(courseStructure,courseName);
+        generateNavigation(courseStructure,courseName);
     })
     .catch(error => console.error('Error loading course structure:', error));
+}

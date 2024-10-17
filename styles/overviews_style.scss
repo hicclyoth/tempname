@@ -1,0 +1,63 @@
+body{
+    .main{
+        animation: fadeIn 2s;
+        margin: 10vh 20vw 0 20vw;
+        h1{
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1rem;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.932) !important;
+            margin: 3vh 0 5vh;
+        }
+        h2{
+            font-weight: 600;
+            font-size: 1.75rem;
+        }
+
+        &__lessons{
+            .main__lesson{
+                display: flex;
+                justify-content: space-between;
+                margin: 5vh 0;
+                transition: background-color 0.3s ease;
+                padding: 1vh 1vw 1vh 1vw;
+                border: 1px solid #121417;
+                border-radius: 15px;
+                h3{
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                }
+                h4{
+                    font-weight: 300;
+                    color: rgba(255, 255, 255, 0.63) !important;
+                }
+                .main__lessons-img{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 1vw;
+                    }
+                }
+
+                &:hover{
+                    background-color: #292e35;
+                }
+            }
+        }
+        .finish-button{
+            margin-top: 10vh;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            a{
+                transition: background-color 0.3s ease;
+            }
+            a:hover{
+                background-color: #1c6bac !important;
+            }
+        }
+    }
+}

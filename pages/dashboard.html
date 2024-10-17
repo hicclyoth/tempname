@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TempName </title>
+    <link rel="stylesheet" href="/styles/default.css">
     <link rel="stylesheet" href="/styles/homepage_style.css">
     <script src="/scripts/route.js"></script>
 
@@ -31,10 +32,6 @@
                     <img src="../images/forum-icon.svg" alt="">
                     <h1>Forum</h1>
                 </a>
-                <a class="sidebar__button sidebar__button-playground" href="#">
-                    <img src="../images/playground-icon.svg" alt="">
-                    <h1>Playground</h1>
-                </a>
                 <a class="sidebar__button sidebar__button-docs" href="#">
                     <img src="../images/docs-icon.svg" alt="">
                     <h1>Docs</h1>
@@ -42,6 +39,10 @@
                 <a class="sidebar__button sidebar__button-help" href="#">
                     <img src="../images/help-icon.svg" alt="">
                     <h1>Help</h1>
+                </a>
+                <a class="sidebar__button sidebar__button-playground" onclick="logout()">
+                    <img src="../images/playground-icon.svg" alt="">
+                    <h1>Log Out</h1>
                 </a>
             </div>
 
@@ -82,13 +83,13 @@
                 <div class="lessons_grid">
 
 
-                    <div class="lesson_item">
+                    <a href="/pages/lessons/basic-csharp/overview.html" class="lesson_item">
                         <img src="../images/lessons/beginners.png" alt="">
                         <div class="lesson_description">
                             <h1>C# for Beginners</h1>
                             <p>10 lessons</p>
                         </div>
-                    </div>
+                    </a>
                     <div class="lesson_item">
                         <img src="../images/lessons/intermediate.png" alt="">
                         <div class="lesson_description">

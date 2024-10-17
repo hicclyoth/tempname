@@ -17,6 +17,10 @@ async function fetchDashboardData() {
     }
 }
 
+function logout(){
+    localStorage.removeItem('token');
+    window.location.replace('signin.html');
+}
 
 // Call the function
 fetchDashboardData();

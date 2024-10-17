@@ -49,6 +49,17 @@ table {
     opacity: 1;
   }
 }
+@keyframes delayedFadeIn {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .active-page {
   background-color: #3a3a3a !important;
   border-color: #3a3a3a !important;
@@ -58,6 +69,17 @@ table {
   box-shadow: none !important;
   white-space: nowrap !important;
   padding: 1.25vh 0.75vw !important;
+}
+
+.anchor-button {
+  background-color: #2194F2 !important;
+  border-color: #121417 !important;
+  font-weight: 400 !important;
+  border-radius: 10px !important;
+  border-style: solid !important;
+  box-shadow: none !important;
+  white-space: nowrap !important;
+  padding: 2vh 2vw !important;
 }
 
 body {
@@ -91,4 +113,53 @@ body nav .nav__buttons {
 }
 body nav .nav__buttons:hover {
   color: #7e7e7e !important;
+}
+
+footer {
+  margin: 10vh 10vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer h1 {
+  margin-bottom: 3vh;
+  font-weight: 700;
+  font-size: 2rem;
+}
+footer .footer-signup {
+  background-color: #2194F2;
+  border: 1px solid #2194F2;
+  font-size: 1em;
+  padding: 1.5vh 3vw;
+  font-weight: 700;
+  border-radius: 13px;
+  text-decoration: none;
+}
+footer .footnotes-about {
+  text-decoration: none;
+}
+footer .footnotes {
+  width: 100%;
+  margin-top: 30vh;
+}
+footer .footnotes ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer .footnotes ul li {
+  color: rgb(151, 151, 151) !important;
+  margin: 0 0 10vh 0;
+}
+footer .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 10vw;
+}
+footer p {
+  margin: 3vh 0 3vh 0;
+  color: rgb(151, 151, 151) !important;
+  font-weight: 300;
 }/*# sourceMappingURL=default.css.map */

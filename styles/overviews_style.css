@@ -1,0 +1,57 @@
+body .main {
+  animation: fadeIn 2s;
+  margin: 10vh 20vw 0 20vw;
+}
+body .main h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+body .main p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.932) !important;
+  margin: 3vh 0 5vh;
+}
+body .main h2 {
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+body .main__lessons .main__lesson {
+  display: flex;
+  justify-content: space-between;
+  margin: 5vh 0;
+  transition: background-color 0.3s ease;
+  padding: 1vh 1vw 1vh 1vw;
+  border: 1px solid #121417;
+  border-radius: 15px;
+}
+body .main__lessons .main__lesson h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+body .main__lessons .main__lesson h4 {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.63) !important;
+}
+body .main__lessons .main__lesson .main__lessons-img {
+  display: flex;
+  align-items: center;
+}
+body .main__lessons .main__lesson .main__lessons-img img {
+  width: 1vw;
+}
+body .main__lessons .main__lesson:hover {
+  background-color: #292e35;
+}
+body .main .finish-button {
+  margin-top: 10vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+body .main .finish-button a {
+  transition: background-color 0.3s ease;
+}
+body .main .finish-button a:hover {
+  background-color: #1c6bac !important;
+}/*# sourceMappingURL=overviews_style.css.map */

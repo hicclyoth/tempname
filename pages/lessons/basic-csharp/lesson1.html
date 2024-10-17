@@ -14,53 +14,31 @@
                 <img src="/images/csharp-logoo.svg" alt="">
                 <h1>Academy</h1>
             </a>
-            <!-- Using active-page class for highlighting buttons of active pages -->
-            <a class="sidebar__button  active-page" href="#">
-                <h1>Lesson 1</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 2</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 3</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 4</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 5</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 6</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 7</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 8</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 9</h1>
-            </a>
-            <a class="sidebar__button" href="#">
-                <h1>Lesson 10</h1>
-            </a>
-
-        </div>
-        
+        <!--dynamic sidebar script will automatically fill this according to the 'course-structure.json'-->
     </div>
 
     <div class="main">
-        <h1 class="main__title">Lesson 1: Overview of C# and Configuring the Environment</h1>
-        <h2 class="main__description">Introduction to C# and its development tools, including Visual Studio and .NET.</h2>
+        <h1 class="main__title">Lesson 1: Classes and Objects</h1>
+        <h2 class="main__description">Understand how to create and use classes and objects in C#—the foundation of object-oriented programming. Learn how to define attributes, methods, and instantiate objects to represent real-world entities.</h2>
+        
 
-        <h3 class="main__subsection main__subsection-introduction">Introduction</h3>
-        <p>C# is a modern object-oriented programming language created by Microsoft. It runs on the .NET framework and is used to develop various applications such as games, web apps, and desktop apps. C# is strongly typed, which means each variable must have a defined type. It supports object-oriented programming (OOP) and can be used across platforms with .NET Core and .NET 5+. A common use case for C# is game development with Unity. Development tools for C# include Visual Studio (VS), a complete integrated development environment (IDE) for coding, debugging, and testing, and Visual Studio Code (VS Code), a lightweight editor that supports C# plugins. To compile and run C# programs, you’ll need the .NET SDK. </p>
+        <h3 class="main__subsection main__subsection-introduction">What is OOP?</h3>
+        <p>OOP stands for Object-Oriented Programming.
+            Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.
+        </p>
+        <br> <br>
+        <h3 class="main__subsection">What are Classes and Objects?</h3>
+        <p>Classes and objects are the two main aspects of object-oriented programming</p>
+        
+
         
         <div class="main__next">
-            <a href="lesson1(2).html" class="anchor-button">Next</a>
+            <!-- leave empty for the script-->
         </div>
         
     </div>
+
+    <script src="/scripts/dynamic-sidebar.js"></script>
+    <script>fetchCourses("basic-csharp")</script>
 </body>
 </html>

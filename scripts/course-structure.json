@@ -33,11 +33,10 @@
     "title": "C# for Intermediate",
     "lessons": [
       {
-        "title": "Introduction to C#",
+        "title": "Classes and Objects",
         "parts": [
           "lesson1.html",
-          "lesson1(2).html",
-          "lesson1(3).html"
+          "lesson1(2).html"
         ]
       },
       {

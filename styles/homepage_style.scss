@@ -116,9 +116,11 @@ body {
       align-self: stretch;
       text-decoration: none;
       
+
       &:hover {
         border-radius: 12px;
         background: #293038;
+        cursor: pointer;
       }
     }
 

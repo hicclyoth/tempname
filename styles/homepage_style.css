@@ -112,6 +112,7 @@ body .parent .sidebar__button {
 body .parent .sidebar__button:hover {
   border-radius: 12px;
   background: #293038;
+  cursor: pointer;
 }
 body .parent .main {
   display: flex;

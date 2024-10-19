@@ -17,6 +17,7 @@ async function handleSignIn(event) {
         
         if (response.ok) {
             document.getElementById('message').innerText = 'Sign up successful!';
+            setTimeout(window.location.replace("dashboard.html"),5000)
         } else {
             document.getElementById('message').innerText = data.error;
         }
